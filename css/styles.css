@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;400;600&display=swap');
+
+:root {
+  --primary-color: #26495c;
+  --secondary-color: #bba065;
+  --graph-color: #c66b3d;
+  --bg-color: #e5e5dc;
+  --dark-color: #333;
+  --light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --country-color: #fff1e1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.4;
+  background: var(--bg-color);
+  color: var(--primary-color);
+  font-family: 'Encode Sans SC', sans-serif;
+}
+
+header {
+  padding: 1rem;
+  background: var(--secondary-color);
+}
+
+.wrapper {
+  max-width: 960px;
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.search i {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.search i:hover {
+  color: var(--graph-color);
+}
+
+.search .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-search {
+  width: 70%;
+}
+
+.search input {
+  width: 100%;
+  padding: 0.5rem 3rem;
+  border-radius: 20px;
+  outline: 0;
+  border: none;
+  margin-top: 1rem;
+
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+
+.country img {
+  width: 10rem;
+}
+
+.countries-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--gray-color);
+  padding: 1rem;
+  width: 18rem;
+  height: 22rem;
+  margin: 0 1rem 1rem 0;
+}
+
+.text-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 1rem;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: var(--bg-color);
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1rem;
+}
+
+.btn:hover {
+  background: var(--graph-color);
+}
+
+.langs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  flex-wrap: wrap;
+}
+
+i.arrow {
+  color: var(--bg-color);
+  margin-left: 0.2rem;
+}
+
+i.arrow:hover {
+  color: var(--bg-color);
+}
+
+.message {
+  display: none;
+  font-style: italic;
+  color: red;
+}
+
+@media (max-width:500px) {
+  .buttons {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+}

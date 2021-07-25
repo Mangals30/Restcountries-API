@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/world.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>World Countries Data</title>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <h1>World Countries Data</h1>
+      <p>Currently we have <span class="total"></span> countries</p>
+      <p class="message"><span class="msg-total"></span> countries satisfied the search criteria.</p>
+    </div>
+  </header>
+  <section class="search">
+    <div class="wrapper">
+      <div class="wrapper-search">
+        <input type="text" class="search-input" placeholder="Search countries by name,capital and languages">
+        <div class="buttons">
+          <button class="btn name">Name</button>
+          <button class="btn capital">Capital</button>
+          <button class="btn population">Population</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrapper">
+      <div class="countries-flex">
+
+      </div>
+    </div>
+  </section>
+  <script src="./scripts/requests.js"></script>
+  <script src="./scripts/countries.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>
