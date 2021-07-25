@@ -1,6 +1,6 @@
 const getCountriesAPI = async () => {
   const countries = []
-  const response = await fetch('http://restcountries.eu/rest/v2/all')
+  const response = await fetch('//restcountries.eu/rest/v2/all')
   if (response.status == 200) {
     const data = await response.json()
     for (const country of data) {
